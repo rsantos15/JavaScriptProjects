@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    
+	<title> This is a Lightbox Example</title>
+	<body>
+        <header>
+            <h1>Just a Sample of a Lightbox</h1>
+			<h2>Click on any right meow!</h2>
+			<link rel="stylesheet" href="./css/one_page_website.css">
+        </header>
+
+<!-- Images used to open the lightbox -->
+<div>
+  <div class="column">
+    <img src="./images/small/cat1.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="./images/small/cat2.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="./images/small/cat3.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="./images/small/cat4.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+  </div>
+</div>
+
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="./images/small/cat1.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="./images/small/cat2.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="./images/small/cat3.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="./images/small/cat4.png" style="width:100%">
+    </div>
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <!-- Thumbnail image controls -->
+    <div class="column">
+      <img class="demo" src="./images/small/cat1.png" onclick="currentSlide(1)" alt="Stripes">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="./images/small/cat2.png" onclick="currentSlide(2)" alt="SnowWhite">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="./images/small/cat3.png" onclick="currentSlide(3)" alt="Tiger">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="./images/small/cat4.png" onclick="currentSlide(4)" alt="Mr.Tux">
+    </div>
+  </div>
+</div>
+		
+		
+
+<script src="./JS/one_page_website.js"></script>	
+</body>
+</html>	
