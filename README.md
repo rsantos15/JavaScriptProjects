@@ -3,8 +3,11 @@ Some projects I made using JavaScript.
 <br>
 <br>
 <a href="">Pizza Menu</a>
+<br>
 <a href="">PTic Tac Toe Game</a>
+<br>
 <a href="">Calculator</a>
+<br>
 
 <h2>Pizza Menu</h2>
 Just the typical ordering menu for pizzas.
